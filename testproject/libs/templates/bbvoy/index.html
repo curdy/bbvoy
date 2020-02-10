@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <title>Be the best version of yourself</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'bbvoy/assets/css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-sm bgcolor-black">
+            <div class="container">
+                <a class="" href="#">Need Help?</a>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active p-2">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </li>
+                        <li class="nav-item p-2">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </li>
+                        <li class="nav-item p-2">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        </li>
+                        <li class="nav-item p-2">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </li>
+                        <li class="nav-item p-2">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="landing">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5 bg-light login-form text-center">
+                        <div class="container">
+                            <form action="/login" method="POST">
+                                {% csrf_token %}
+                                <div class="row">
+
+                                    <div class="col-md-5 pt-5 pb-5 mt-5 text-center login-landing">
+                                        <img src="{% static 'bbvoy/assets/img/Cap Logo.png' %} width=" 100% " alt=" ">
+                                </div>
+                                <div class="col-md-8 login-logo ">
+                                    <img src="{% static 'bbvoy/assets/img/logo.png' %} width="100%" alt="">
+                                    </div>
+                                    <div class="col-md-8 text-center login">
+                                        <div class="form-group">
+                                            <label for=""><i class="fa fa-user" aria-hidden="true"></i> EMAIL</label>
+                                            <input type="email" class="form-control" name="email" id="" aria-describedby="emailHelpId" placeholder="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 text-center login">
+                                        <div class="form-group">
+                                            <label for=""><i class="fa fa-key" aria-hidden="true"></i> PASSWORD</label>
+                                            <input type="password" class="form-control" name="password" id="" aria-describedby="emailHelpId" placeholder="password">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 pb-2 mt-2 text-center form-group" style="margin: auto;">
+                                        <button name="" id="" class="btn btn-primary" type="submit" role="button">Login</button>
+
+                                    </div>
+                                    <div class="col-md-8 text-center pt-4 login">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" >
+                                Remember me?
+                              </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 pt-4 pb-" style="margin: auto;">
+                                        <a href="">Forgot Password? </a>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-7 splash login-images">
+                        <div class="login-image">
+                            <img src="{% static 'bbvoy/assets/img/FB Logo.jpeg" width="100%" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="copyright pt-5 pb-2">
+          &copy; Be the best version of yourself. Designed by Silicon Burg.com
+         </div> -->
+
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

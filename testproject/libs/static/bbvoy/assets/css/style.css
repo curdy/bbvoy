@@ -1,0 +1,452 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: black;
+    color: white;
+}
+.navbar{
+    color: white;
+    background: black;
+}
+.login-landing{
+    margin: auto;
+}
+.login-logo{
+    margin: auto;
+}
+.login{
+    margin: auto;
+    color: black;
+}
+.display{
+    width: 100%;
+    height: 100vh;
+}
+.showcase{
+    width: 100%;
+    height: 100vh;
+}
+.landing{
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+.landing{
+    height: 90vh;
+    width: 100%;
+    padding: 0;
+}
+.banner-image {
+    background-image: url(../img/banner.png);
+    background-size: contain;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+}
+
+.banner-image-1 {
+    background-image: url(../img/banner.png);
+    background-size: contain;
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+}
+.side-nav{
+    height: 100vh;
+    width: 100%;
+}
+.logo-section{
+    margin: 80px 0;
+    height: 150px;
+}
+.section-banner{
+    margin: 80px 0 10px;
+        width: 100%;
+}
+.section-banner-1{
+    margin-top: 60px;
+    width: 100%;
+}
+.section-heading{
+    text-align: center;
+    margin: -100px 0 -50px;
+}
+.section-heading-text{
+    margin: auto;
+}
+.section-heading-video{
+    margin-bottom: 80px;
+
+}
+.video{
+    margin: auto;
+}
+.section-info{
+
+}
+.icons{
+    padding-right: 10px;
+}
+.nav-menu{
+    line-height: 2;
+    list-style: none;
+    padding: 0;
+}
+.menu-items{
+    width: 100%;
+
+}
+.nav-item{
+    padding: 1px;
+    font-size: 20px ;
+    color: white;
+}
+.section-title{
+    margin: 80px 0 ;
+}
+.section-paragraph{
+    padding: 20px;
+}
+.section-pillars{
+    width: 100%;
+}
+.section-downloads{
+    margin: 60px 0 10px 0;
+    text-align: center;
+
+}
+.value-heading{
+    align-self: center;
+}
+
+.gratitude {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+}
+
+.humanity {
+    position: absolute;
+    left: 52%;
+    top: 40%;
+}
+
+.self-worth {
+    position: absolute;
+    left: 52%;
+    top: 60%;
+}
+.spirituality {
+    position: absolute;
+    left: 40%;
+    top: 70%;
+}
+.leadership {
+    position: absolute;
+    left: 28%;
+    top: 60%;
+}
+.coaching {
+    position: absolute;
+    left: 28%;
+    top: 40%;
+}
+    .btn-nav-btn{
+        width: 100%;
+        text-align: left;
+    }
+    .btn-primary {
+        color: #fff;
+        border-color: black ;
+    }
+    .section-image{
+        height: 400px;
+    }
+    .lessons{
+        display: flex;
+    }
+    .nav-link{
+        color: white;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+    }
+    
+    .pillar-image{
+        width: 200px;
+    }
+
+    @media(max-width: 500px){
+        .banner-image {
+            background-image: url(../img/Banner---TM.jpg);
+            background-size: contain;
+            width: 100%;
+            height: 90px;
+            margin-bottom: 50px;
+        }
+        .splash{
+            display: none   ;
+        }
+        .pillar-image{
+            width: 170px;
+        }
+        .side-nav{
+            display: none;
+        }
+        .section-banner-1 {
+            margin-top: 120px;
+            width: 100%;
+        }
+        .navbar-toggler {
+            padding: .25rem .75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: white;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+        }
+        .gratitude {
+            position: absolute;
+            left: 28%;
+            top: 35%;
+        }.humanity {
+            position: absolute;
+            top: 45%;
+        }.self-worth {
+            position: absolute;
+            top: 60%;
+        }.spirituality {
+            position: absolute;
+            left: 25%;
+            top: 67%;
+        }.leadership {
+            position: absolute;
+            top: 60%;
+            left: 0;
+        }.coaching {
+            position: absolute;
+            top: 45%;
+            left: 0;
+        }
+    }
+
+    /* account page */
+
+    .icon{
+        margin: 50px;
+    }
+    .section-account{
+        color: black;
+    }
+    .card{
+        align-items: center;
+    }
+
+    /*  */
+    .nav-pills{
+        width: 100%;
+    }
+    .tab-content{
+        width: 100%;
+    }
+    .tab-pane{
+        width:100%
+    }
+.lessons-section{
+    width: 100%;
+    margin: 50px 0 0;
+    padding-left: 250px;
+}
+.lessons-section-coach{
+    width: 100%;
+    margin: 50px 0 0;
+    padding-left: 250px;
+}
+.lessons-section-spirtuality {
+    width: 100%;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.card{
+    width: 270px;
+    height: 240px;
+    background: url(../img/card-gratitude.png);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+
+}
+.card-spirituality{
+    width: 100%;
+    height: 200px;
+    background: url(../img/card-imageSpirituality.png);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+
+}
+.card-leadership{
+    width: 270px;
+    height: 200px;
+    background: url(../img/card-imageLeadership.png);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+
+}
+.card-selfworth{
+    width: 270px;
+    height: 200px;
+    background: url(../img/card-selfworth.png);
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    background-repeat: no-repeat;
+
+}
+.card-humanity{
+    width: 270px;
+    height: 200px;
+    background: url(../img/card-humanity.png);
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    background-repeat: no-repeat;
+
+}
+.card-bethecoach{
+    width: 270px;
+    height: 200px;
+    background: url(../img/card-bethecoach.png);
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    background-repeat: no-repeat;
+
+}
+.week-schedule{
+    margin-top: -40px;
+}
+.button-spirituality{
+    padding-top: 20px;
+}
+.btn{
+    font-size: 10px;
+}
+
+.btn-week{
+    color: white;
+}
+.login-images{
+    align-self: center;
+
+}
+.button{
+    padding: 10px;
+}
+.copyright{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+.lesson-card-spirituality{
+    margin: auto;
+    padding-top: 20px;
+}
+.skillsbar{
+    text-align: cener;
+       width: 100%;
+    padding: 10px;
+  }
+  .sectionslider1{
+      display: flex;
+    padding: 5px 15px 5px 15px;
+  }
+  .sliderpart1{
+    width: 100%;
+    padding: 5px 30px 5px 30px;
+  }
+  
+  .side-menu-section-title{
+    margin: 10px 0 40px;
+      font-size: 20px;
+    font-weight: 600;
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+    padding-bottom: 10px;
+      background-image: linear-gradient(to right, #1571ad, #1AAFCE);
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: 5% 5px;
+      transition: background-size .5s ease;
+  }
+  .side-menu-section-title:hover {
+      background-size: 100% 100px;
+        color: #2e2e2e;
+    border-radius: 5px;
+  }
+  
+  /* Scrollable container for the side menu options */
+  
+  .side-menu-account-limits{
+      text-align: left;
+      text-transform: uppercase;
+      margin: 0 0 1px;
+      color: #cccccc;
+  }
+  .side-menu-account-limits span{
+    float: right;
+  }
+  .side-menu-progress-bar{
+    height: 10px;
+      background-color: #383c43;
+      margin: 10px 0 30px;
+            border-radius: 5px;
+            box-shadow: 0 0px 15px rgba(0,0,0,0.3);
+  }
+  .side-menu-progress-bar span{
+    height: 10px;
+      display: block;
+      background-image: linear-gradient(to right, #1AAFCE, #8AC346);
+          border-radius: 5px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .skillsbar{
+    text-align: cener;
+    padding: 15px;
+  }
+  .sectionslider1{
+    display: block;
+    padding: 5px;
+  }
+    
+  }
+  .btn-humanity{
+      background-color: #1571ad;
+  }
+  .btn-gratitude{
+    background-color: #1AAFCE;
+}
+  .btn-self-worth{
+    background-color: #B84B26;
+}
+.btn-spirituality{
+    background-color: #F39F20;
+}
+.btn-leadership{
+    background-color: #1F9D79;
+}
+.btn-coach{
+    background-color: #8AC346;
+}
