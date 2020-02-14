@@ -13,18 +13,25 @@ from django.template.loader import render_to_string
 from testapp.tokens import account_activation_token
 from django.core.mail import EmailMessage
 
+from django.contrib.auth.decorators import login_required
+
 # Create your views here.
 def dashboard(request):
 
-    return render(request, 'bbvoy/index.html', {})
+    return render(request, 'dashboard/auth/signin.html', {})
 
+
+@login_required
 def dash(request):
-    return render(request, 'bbvoy/account.html')
+    return render(request, 'dashboard/dashboard/courses.html')
 
 def create_user(request):
     
     if request.method == "POST":
         user = User.objects.create_user(request.POST['email'], request.POST['email'], request.POST['password'])
+        user.first_name = request.POST['first_name']
+        user.last_name = request.POST['last_name']
+        user.is_active = False
         user.save()
         current_site = get_current_site(request)
         mail_subject = 'Activate your account.'
@@ -40,23 +47,26 @@ def create_user(request):
         )
         email.send()
 
-        return redirect('/login')
+        return HttpResponse("pleas echeck your email to activate account")
     else:
-        return render(request, 'bbvoy/register.html', {})
+        return render(request, 'dashboard/auth/signup.html', {})
     
     return HttpResponse()
 
 def sign_in(request):
-    username = request.POST['email']
-    password = request.POST['password']
-    user = authenticate(request, username=username, password=password)
-    if user is not None:
-        login(request, user)
-        return redirect('/dashboard')
-        
+
+    if request.method == "POST":
+
+        user = authenticate(request, username=request.POST['email'], passsword=request.POST['password'])
+        if user is not None:
+            login(request, user,  backend='django.contrib.auth.backends.ModelBackend')
+            return redirect('/dashboard')
+            
+        else:
+            # Return an 'invalid login' error message.
+            return HttpResponse('email or password information invalid')
     else:
-        # Return an 'invalid login' error message.
-        return ('email or password information invalid')
+        pass
 
 def activate(request, uidb64, token):
     try:

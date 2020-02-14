@@ -14,7 +14,8 @@ urlpatterns = (
     url(r"^api/auth/", include("djoser.social.urls")),
 
     path("", home, name="home"),
-    url(r"^account/login", dashboard, name="login"),
+    url(r"^account/login", dashboard, name="signin"),
+    url(r"^accounts/login", dashboard, name="signin2"),
     url(r"^account/register", create_user, name="register"),
     url(r"^dashboard", dash, name="dashbaord"),
     url(r"^login", sign_in, name="signin"),
